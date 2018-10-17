@@ -1,7 +1,116 @@
-$bg-color: #333;
-$color: #fff;
+@import url("https://fonts.googleapis.com/css?family=Patua+One");
 
 body {
-    background: $bg-color;
-    color:$color;
+  display: grid;
+  grid-template-columns: 75% 25%;
+
+  grid-gap: 0.5em;
+  font-family: "Patua One", cursive;
+  max-width: 83em;
+  padding: 2px 0;
+  background-image: url(/images/first_work_1.GIF);
+}
+.image {
+  margin-top: 50px;
+  margin-left: 50%;
+  width: 40%;
+  border: white;
+  border-style: groove;
+  border-radius: 50%;
+}
+
+main,
+aside {
+  background: url(images/noise.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+aside {
+  display: grid;
+  grid-auto-columns: 100%;
+}
+.sidebar {
+  background: #00dab2;
+  padding: 30px;
+  border-radius: 25px;
+  opacity: 0.7;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sidebar:hover {
+  opacity: 1;
+}
+.box {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 850px;
+  height: 600px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 25px #000;
+  color: white;
+  margin: auto;
+
+  cursor: pointer;
+  transition: all 1s;
+  .box__blurb {
+    opacity: 1;
+    transition: opacity 0.5s 0.5s, transform 0.5s 0.5s;
+    text-align: justify;
+  }
+  .rect__blurb {
+    opacity: 0;
+    transition: opacity 0.5s 1s, transform 0.5s 1s;
+    text-align: justify;
+  }
+  &:hover {
+    width: 800px;
+    background-color: #fdfdfd;
+    box-shadow: -5px 5px 25px #000;
+    .box__blurb {
+      opacity: 0;
+      transform: translateX(-500px);
+    }
+    .rect__blurb {
+      opacity: 1;
+      transform: translateX(-100px);
+    }
+    color: black;
+  }
+}
+.fancybox-slide--iframe .fancybox-content {
+  width: 95%;
+  height: 95%;
+  max-width: 95vw;
+  max-height: 95vh;
+  margin-top: 5px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  border: groove;
+}
+
+button {
+  font-family: "Patua One", cursive;
+  font-size: 20px;
+  background: #00dab2;
+  border: none;
+  color: white;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  margin-left: 30px;
+  margin-right: -550px;
+  margin-bottom: -135px;
+  margin-top: -180px;
 }
