@@ -3,15 +3,17 @@
 
 <head>
   <title>Portfolio</title>
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+
+  <link rel="stylesheet" href="./css/style.css">
 
   <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
 
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    crossorigin="anonymous">
 
 </head>
 
@@ -24,14 +26,20 @@
         <span class="box__blurb">
 
 
-          <img src="images/IMG_20170613_100731_xk5apl.jpg" class="image" />
+          <img src="./lucio.JPG" class="image" />
           <h1>Lucio Camargo</h1>
-          <p>
-            My name is Lucio Camargo and I'm a Front-End Developer with experience in the following technologies:
-            ReactJS, Javascript, CSS3, HTML5, Node.JS, ExpressJS, MongoDB, Bootstrap, Sass and Git(Version Control).
+          <p class="desktop">
+            I am a Front-End Developer with experience in the following technologies:
+            ReactJS, Javascript ES6, CSS3, HTML5, Redux, Node.JS, ExpressJS, MongoDB, Bootstrap, Sass and Git(Version Control).
             I would like to
             bring value to your company. Please hover over this box to see a brief description of my projects with
-            links and live preview avaiable on the sidebar.
+            links avaiable on the sidebar.
+
+          </p>
+          <p class="responsive">
+            I am a Front-End Developer with experience in the following technologies:
+            ReactJS, Javascript ES6, CSS3, HTML5, Node.JS, Redux, ExpressJS, MongoDB, Bootstrap, Sass and Git(Version Control).
+            I would like to bring value to your company. Please click on the items below to see links to my projects.
 
           </p>
 
@@ -43,29 +51,27 @@
 
           <div>
 
-            <h2>Projects</h2>
+            <li><pro>Projects:</pro></li>
             <li>
-              <h4>Freelance Suite:</h4> Project built in collaboration with
-              CodeSocial at Basislager Coworking Leipzig using ReactJS,
-              CSS Grid, MongoDB, Node.js and JSON Web Tokens.
+              <b>JSON UI:</b> Based on a .json file from <a href="http://caniuse.com">caniuse.com</a>, user is able to visualize data in a tabular way (including pagination), search for entries, access a detailed view through routing and add, delete and search for tags. Made with ReactJS and React Router 4. 
             </li>
             <li>
-              <h4>React Calculator:</h4> Javascript Calculator built with ReactJS
+               <b>Movie Database:</b> User is able to search for information on any film on IMDB(Internet Movie Database). Searches are saved in the browser cache. Project was built with ReactJS and uses the OMDb API to retrieve data.
+            </li>
+            <li>
+              <b>React Calculator:</b> Javascript Calculator built with ReactJS
               and CSS Flexbox.
             </li>
             <li>
-              <h4>Random Kasparov Quote Machine:</h4> Random Quote Generator
+              <b>Stromae Player:</b> Virtual DJ Emulator built with
+              Vanilla Javascript ES6 and CSS Flexbox.
+            </li>
+            <li>
+
+              <b>Random Kasparov Quote Machine:</b> Random Quote Generator
               built with Vanilla Javascript and CSS Grid.
             </li>
-            <li>
-              <h4>Virtual Stromae Emulator:</h4> Virtual DJ Emulator built with
-              Vanilla Javascript ES6 and CSS Flexbox.
-
-            </li>
-            <li>
-              <h4>Brasileiros em Leipzig:</h4> Responsive Product Landing Page for
-              local service provider built with Bootstrap, CSS3 and HTML5.
-            </li>
+            
 
           </div>
 
@@ -81,39 +87,49 @@
 
   </main>
   <aside>
-    <div class="sidebar">1</div>
-    <div class="sidebar"><a data-fancybox data-type="iframe" data-src="http://luciocamargo.com/react-calc" href="javascript:;">
+       <div class="sidebar"><a href="http://luciocamargo.com/JSON_Data_Search/">
 
-        <button>React Calculator</button>
-      </a>
-
-    </div>
-
-    <div class="sidebar"><a data-fancybox data-type="iframe" data-src="http://www.luciocamargo.com/alors_on_danse/index.html"
-        href="javascript:;">
-
-        <button>Stromae Player</button>
-      </a>
-
-    </div>
-
-
-    <div class="sidebar"><a data-fancybox data-type="iframe" data-src="http://www.luciocamargo.com/Random_Quote_Generator/index.html"
-        href="javascript:;">
-
-        <button>Random Quote Generator</button>
-      </a>
-
-    </div>
-
-
-    <div class="sidebar"><a data-fancybox data-type="iframe" data-src="http://www.luciocamargo.com/Brasileiros_em_Leipzig/index.html"
-        href="javascript:;">
-
-        <button>Brasileiros em Leipzig</button></div>
+        <button>JSON UI</button></a></div>
     <div class="sidebar">
+      <a href="http://luciocamargo.com/film_search">
+        <button>Movie Database</button></a></div>
+    <div class="sidebar">
+      <a href="http://luciocamargo.com/react-calc">
 
-      <i class="fab fa-linkedin-in" style="font-size:48px;"></i>
+        <button>React Calculator</button></a></div>
+
+    <div class="sidebar"><a href="http://www.luciocamargo.com/alors_on_danse/index.html">
+
+        <button>Stromae Player</button></a></div>
+
+    </div>
+
+
+    <div class="sidebar"><a href="http://www.luciocamargo.com/Random_Quote_Generator/index.html">
+
+        <button>Random Quote Generator</button></a></div>
+
+
+   
+
+
+
+
+    <div class="sidebar icons">
+
+      <a href="https://github.com/luciomcamargo"><i class="fa-2x fab fa-github" style="color:white"></i></a>
+
+      <a href="https://www.linkedin.com/in/lucio-camargo-70b674160/"><i class="fa-2x fab fa-linkedin" style="color:white"></i></a>
+
+      <a href="mailto:luciomcamargo@gmail.com"><i class="fa-2x fas fa-envelope" style="color:white"></i></a>
+
+    </div>
+
+
+
+
+
+
   </aside>
 
 </body>
