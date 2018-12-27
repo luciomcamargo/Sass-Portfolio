@@ -67,26 +67,24 @@ aside {
   color: white;
   margin: auto;
   cursor: pointer;
-  -webkit-transition: all 1s;
-  transition: all 1s; }
+  -webkit-transition: 0.5s ease-out 1s;
+  transition: 0.5s ease-out 1s; }
   .box .box__blurb {
     opacity: 1;
-    -webkit-transition: opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
-    transition: opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
-    transition: opacity 0.5s 0.5s, transform 0.5s 0.5s;
-    transition: opacity 0.5s 0.5s, transform 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
-    transition: opacity 0.5s 0.5s, transform 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
+    -webkit-transition: opacity 0.5s ease-out 1s, -webkit-transform 0.5s ease-out 1s;
+    transition: opacity 0.5s ease-out 1s, -webkit-transform 0.5s ease-out 1s;
+    transition: opacity 0.5s ease-out 1s, transform 0.5s ease-out 1s;
+    transition: opacity 0.5s ease-out 1s, transform 0.5s ease-out 1s, -webkit-transform 0.5s ease-out 1s;
     text-align: justify; }
   .box .rect__blurb {
-    opacity: 0;
-    -webkit-transition: opacity 0.5s 0.1s, -webkit-transform 0.9s 0.5s;
-    transition: opacity 0.5s 0.1s, -webkit-transform 0.9s 0.5s;
-    transition: opacity 0.5s 0.1s, transform 0.9s 0.5s;
-    transition: opacity 0.5s 0.1s, transform 0.9s 0.5s, -webkit-transform 0.9s 0.5s;
-    transition: opacity 0.5s 0.1s, transform 0.9s 0.5s, -webkit-transform 0.9s 0.5s;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-out 1s, -webkit-transform 0.5s ease-out 1s;
+    transition: opacity 0.5s ease-out 1s, -webkit-transform 0.5s ease-out 1s;
+    transition: opacity 0.5s ease-out 1s, transform 0.5s ease-out 1s;
+    transition: opacity 0.5s ease-out 1s, transform 0.5s ease-out 1s, -webkit-transform 0.5s ease-out 1s;
     text-align: justify; }
   .box:hover {
-    width: 800px;
+    width: 850px;
     background-color: #fdfdfd;
     -webkit-box-shadow: -5px 5px 25px #000;
     box-shadow: -5px 5px 25px #000;
@@ -99,20 +97,6 @@ aside {
       opacity: 1;
       -webkit-transform: translateX(-1650px);
       transform: translateX(-1650px); }
-
-.fancybox-slide--iframe .fancybox-content {
-  width: 95%;
-  height: 95%;
-  max-width: 95vw;
-  max-height: 95vh;
-  margin-top: 5px;
-  margin-left: 10px;
-  position: absolute;
-  z-index: 1;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-  border: groove; }
 
 button {
   font-family: 'Patua One', cursive;
@@ -128,7 +112,8 @@ li {
   margin-bottom: 40px;
   margin-left: 1200px;
   margin-right: -1600px;
-  list-style: none; }
+  list-style: none;
+  pointer-events: none; }
 
 b {
   font-size: 20px; }
